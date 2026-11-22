@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propostas | DC</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="topo">
+        <div class="topo__interno">
+            <a class="logo" href="index.html" aria-label="DC, ir para a página inicial"><img src="img/logo.png" alt="" width="32" height="24"></a>
+            <button class="menu-botao" type="button" aria-expanded="false" aria-controls="menu">Menu</button>
+            <nav id="menu" class="menu" aria-label="Principal"><a href="index.html">Home</a><a href="interiores.html">Projetos de Interiores</a><a href="fachadas.html">Projetos de Fachadas</a><a href="propostas.html" aria-current="page">Propostas</a><a href="contatos.html">Contatos</a></nav>
+        </div>
+    </header>
+    <main class="conteudo">
+        <h1>Propostas</h1>
+        <p class="lede">Conte o que você precisa e receba uma proposta com valor e prazo.</p>
+
+        <section aria-labelledby="t-servicos">
+            <h2 id="t-servicos">O que posso fazer</h2>
+            <ul class="servicos">
+                <li><a href="interiores.html"><img src="img/interior-01.jpg" alt="" width="800" height="640" loading="lazy"><span>Projetos de Interiores</span><small>Cozinhas, salas e áreas de convivência.</small></a></li>
+                <li><a href="fachadas.html"><img src="img/fachada-04.jpg" alt="" width="800" height="660" loading="lazy"><span>Projetos de Fachadas</span><small>Fachadas residenciais e de prédios, de dia, à noite e sob chuva.</small></a></li>
+                <li><a href="interiores.html"><img src="img/interior-07.jpg" alt="" width="800" height="640" loading="lazy"><span>Áreas externas</span><small>Piscinas, pergolados e áreas de lazer.</small></a></li>
+            </ul>
+        </section>
+
+        <section aria-labelledby="t-passos">
+            <h2 id="t-passos">Como funciona</h2>
+            <ol class="passos">
+                <li><strong>Briefing</strong><span>Você envia plantas, medidas e referências.</span></li>
+                <li><strong>Proposta</strong><span>Eu retorno com valor e prazo.</span></li>
+                <li><strong>Modelagem</strong><span>O ambiente é criado em 3D.</span></li>
+                <li><strong>Entrega</strong><span>Você recebe as imagens finais do projeto.</span></li>
+            </ol>
+        </section>
+
+        <section aria-labelledby="t-form" class="bloco-form">
+            <h2 id="t-form">Solicite uma proposta</h2>
+            <form data-assunto="Pedido de proposta" novalidate>
+            <div class="campo">
+                <label for="nome">Nome</label>
+                <input id="nome" name="nome" type="text" aria-describedby="nome-erro" autocomplete="name">
+                <p id="nome-erro" class="erro" role="alert"></p>
+            </div>
+            <div class="campo">
+                <label for="email">E-mail</label>
+                <input id="email" name="email" type="email" aria-describedby="email-erro" autocomplete="email">
+                <p id="email-erro" class="erro" role="alert"></p>
+            </div>
+            <div class="campo">
+                <label for="telefone">Telefone ou WhatsApp <span class="opcional">(opcional)</span></label>
+                <input id="telefone" name="telefone" type="tel" aria-describedby="telefone-erro" inputmode="tel" autocomplete="tel" placeholder="(35) 99999-0000">
+                <p id="telefone-erro" class="erro" role="alert"></p>
+            </div>
+            <div class="campo">
+                <label for="tipo">Tipo de projeto</label>
+                <select id="tipo" name="tipo" aria-describedby="tipo-erro">
+                    <option value="">Escolha uma opção</option>
+                    <option>Interiores</option>
+                    <option>Fachada</option>
+                    <option>Área externa</option>
+                    <option>Outro</option>
+                </select>
+                <p id="tipo-erro" class="erro" role="alert"></p>
+            </div>
+            <div class="campo">
+                <label for="mensagem">Descreva o projeto</label>
+                <textarea id="mensagem" name="mensagem" rows="5" aria-describedby="mensagem-erro"></textarea>
+                <p id="mensagem-erro" class="erro" role="alert"></p>
+            </div>
+                <button class="botao" type="submit">Enviar pedido</button>
+                <p class="status" role="status"></p>
+            </form>
+        </section>
+    </main>
+    <footer class="rodape"></footer>
+    <script src="app.js" defer></script>
+</body>
+</html>

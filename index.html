@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | DC</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="topo">
+        <div class="topo__interno">
+            <a class="logo" href="index.html" aria-label="DC, ir para a página inicial"><img src="img/logo.png" alt="" width="32" height="24"></a>
+            <button class="menu-botao" type="button" aria-expanded="false" aria-controls="menu">Menu</button>
+            <nav id="menu" class="menu" aria-label="Principal"><a href="index.html" aria-current="page">Home</a><a href="interiores.html">Projetos de Interiores</a><a href="fachadas.html">Projetos de Fachadas</a><a href="propostas.html">Propostas</a><a href="contatos.html">Contatos</a></nav>
+        </div>
+    </header>
+    <main class="conteudo">
+        <h1 class="sr-only">Home</h1>
+        <div class="atalhos">
+            <a class="atalho" href="interiores.html"><img src="img/interior-01.jpg" alt="" width="602" height="600"><span>Projetos de Interiores</span></a>
+            <a class="atalho" href="fachadas.html"><img src="img/fachada-01.jpg" alt="" width="608" height="500"><span>Projetos de Fachadas</span></a>
+        </div>
+    </main>
+    <footer class="rodape"></footer>
+    <script src="app.js" defer></script>
+</body>
+</html>

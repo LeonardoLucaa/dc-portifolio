@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contatos | DC</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="topo">
+        <div class="topo__interno">
+            <a class="logo" href="index.html" aria-label="DC, ir para a página inicial"><img src="img/logo.png" alt="" width="32" height="24"></a>
+            <button class="menu-botao" type="button" aria-expanded="false" aria-controls="menu">Menu</button>
+            <nav id="menu" class="menu" aria-label="Principal"><a href="index.html">Home</a><a href="interiores.html">Projetos de Interiores</a><a href="fachadas.html">Projetos de Fachadas</a><a href="propostas.html">Propostas</a><a href="contatos.html" aria-current="page">Contatos</a></nav>
+        </div>
+    </header>
+    <main class="conteudo">
+        <h1>Contatos</h1>
+        <p class="lede">Escolha o canal que for mais fácil para você.</p>
+        <div class="duas-colunas">
+            <section aria-labelledby="t-canais">
+                <h2 id="t-canais">Canais</h2>
+                <ul class="canais">
+                    <li><span>E-mail</span><a data-contato="email" href="mailto:seu-email@exemplo.com">seu-email@exemplo.com</a></li>
+                    <li><span>WhatsApp</span><a data-contato="whatsapp" href="https://wa.me/5500000000000">(00) 00000-0000</a></li>
+                    <li><span>Instagram</span><a data-contato="instagram" href="https://instagram.com/luizdecarvalho_">@luizdecarvalho_</a></li>
+                </ul>
+            </section>
+            <section aria-labelledby="t-msg" class="bloco-form">
+                <h2 id="t-msg">Envie uma mensagem</h2>
+                <form data-assunto="Contato pelo site" novalidate>
+            <div class="campo">
+                <label for="nome">Nome</label>
+                <input id="nome" name="nome" type="text" aria-describedby="nome-erro" autocomplete="name">
+                <p id="nome-erro" class="erro" role="alert"></p>
+            </div>
+            <div class="campo">
+                <label for="email">E-mail</label>
+                <input id="email" name="email" type="email" aria-describedby="email-erro" autocomplete="email">
+                <p id="email-erro" class="erro" role="alert"></p>
+            </div>
+            <div class="campo">
+                <label for="mensagem">Mensagem</label>
+                <textarea id="mensagem" name="mensagem" rows="5" aria-describedby="mensagem-erro"></textarea>
+                <p id="mensagem-erro" class="erro" role="alert"></p>
+            </div>
+                    <button class="botao" type="submit">Enviar mensagem</button>
+                    <p class="status" role="status"></p>
+                </form>
+            </section>
+        </div>
+    </main>
+    <footer class="rodape"></footer>
+    <script src="app.js" defer></script>
+</body>
+</html>
